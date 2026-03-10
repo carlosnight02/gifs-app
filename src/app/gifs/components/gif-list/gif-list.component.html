@@ -1,19 +1,5 @@
 <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
-
-  <gif-liste-item />
-  <gif-liste-item />
-  <gif-liste-item />
-  <gif-liste-item />
-  <gif-liste-item />
-  <gif-liste-item />
-  <gif-liste-item />
-  <gif-liste-item />
-  <gif-liste-item />
-  <gif-liste-item />
-  <gif-liste-item />
-  <gif-liste-item />
-  <gif-liste-item />
-  <gif-liste-item />
-  <gif-liste-item />
-
+  @for (gif of gifs(); track gif) {
+    <gif-liste-item [imageUrl]="gif" />
+  }
 </div>

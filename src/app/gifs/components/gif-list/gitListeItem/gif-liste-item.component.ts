@@ -1,4 +1,4 @@
-import { ChangeDetectionStrategy, Component } from '@angular/core';
+import { Component, input } from '@angular/core';
 
 @Component({
   selector: 'gif-liste-item',
@@ -7,4 +7,6 @@ import { ChangeDetectionStrategy, Component } from '@angular/core';
 })
 //gifs-side-menu-header
 //side-menu-header.component
-export class GifListeItemComponent { }
+export class GifListeItemComponent {
+  imageUrl = input.required<string>();
+}
