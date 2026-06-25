@@ -1,11 +1,11 @@
 import { ChangeDetectionStrategy, Component } from '@angular/core';
-import { RouterLink, RouterLinkActive } from "@angular/router";
+import { RouterLink, RouterLinkActive } from '@angular/router';
 
-interface MenuOption{
+interface MenuOption {
   label: string;
   subLabel: string;
   route: string;
-  icon:string;
+  icon: string;
 }
 
 @Component({
@@ -14,20 +14,18 @@ interface MenuOption{
   templateUrl: './side-menu-options.component.html',
 })
 export class SideMenuOptionsComponent {
-
   menuOptions: MenuOption[] = [
     {
       icon: 'fa-solid fa-chart-line',
-      label: 'Treding',
+      label: 'Tressding',
       subLabel: 'Gifs Populares',
       route: '/dashboard/trending',
     },
-      {
+    {
       icon: 'fa-solid fa-magnifying-glass',
       label: 'Buscador',
       subLabel: 'Buscar gifs',
       route: '/dashboard/search',
     },
-  ]
-
+  ];
 }
